@@ -9,8 +9,7 @@ public class StockProducts {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		Product product;
-		product = new Product();
+		Product product = new Product();
 		
 		System.out.println("Inform the name, price and quantity in stock of the product respectively:");
 		
