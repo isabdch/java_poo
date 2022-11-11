@@ -17,7 +17,7 @@ public class StockProducts {
 		product.price = sc.nextDouble();
 		product.quantity = sc.nextInt();
 		
-		System.out.println(product.toString());
+		System.out.println(product);
 		
 		System.out.println("Inform the quantity you want to add in stock:");
 		
