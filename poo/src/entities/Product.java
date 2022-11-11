@@ -18,14 +18,12 @@ public class Product {
 		this.quantity -= quantity;
 	}
 
-	public void showProductInfo() {
-		System.out.println("");
-		System.out.println("--- PRODUCT ---");
-		System.out.printf("Name: %s%n", name);
-		System.out.printf("Price: $%.2f%n", price);
-		System.out.printf("Quantity: %d units%n", quantity);
-		System.out.printf("Total price in stock: $%.2f%n", totalPrice());
-		System.out.println("");
+	public String toString() {
+		return "\n--- PRODUCT ---\n" + 
+			   "Name: " + name +  "\n" +
+			   "Price: $" + String.format("%.2f", price) + "\n" +
+			   "Quantity in stock: " + quantity + " units\n" +
+			   "Total price in stock: $" + String.format("%.2f", totalPrice()) + "\n";
 	}
 
 }

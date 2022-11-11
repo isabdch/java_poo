@@ -17,21 +17,21 @@ public class StockProducts {
 		product.price = sc.nextDouble();
 		product.quantity = sc.nextInt();
 		
-		product.showProductInfo();
+		System.out.println(product.toString());
 		
 		System.out.println("Inform the quantity you want to add in stock:");
 		
 		int add = sc.nextInt();
 		
 		product.addStock(add);
-		product.showProductInfo();
+		System.out.println(product.toString());
 		
 		System.out.println("Now inform the quantity you want to remove in stock:");
 		
 		int remove = sc.nextInt();
 		
 		product.removeStock(remove);
-		product.showProductInfo();
+		System.out.println(product.toString());
 		
 		sc.close();
 	}
