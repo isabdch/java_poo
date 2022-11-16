@@ -9,13 +9,13 @@ public class StockProducts {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
-		Product product = new Product();
-		
 		System.out.println("Inform the name, price and quantity in stock of the product respectively:");
 		
-		product.name = sc.nextLine();
-		product.price = sc.nextDouble();
-		product.quantity = sc.nextInt();
+		String name = sc.nextLine();
+		double price = sc.nextDouble();
+		int quantity = sc.nextInt();
+		
+		Product product = new Product(name, price, quantity);
 		
 		System.out.println(product);
 		
